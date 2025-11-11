@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI Media Studio</title>
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for a more modern look */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(192, 132, 252, 0.5); /* purple-400 with opacity */
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(192, 132, 252, 0.8);
+    }
+    /* Simple keyframe for button click wave effect */
+    @keyframes wave-effect {
+      0% {
+        box-shadow: 0 0 0 0 rgba(192, 132, 252, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 10px rgba(192, 132, 252, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(192, 132, 252, 0);
+      }
+    }
+    .wave {
+      animation: wave-effect 1s;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "rxjs": "https://aistudiocdn.com/rxjs@^7.8.2?conditions=es2015",
+    "rxjs/operators": "https://aistudiocdn.com/rxjs@^7.8.2/operators?conditions=es2015",
+    "rxjs/ajax": "https://aistudiocdn.com/rxjs@^7.8.2/ajax?conditions=es2015",
+    "rxjs/webSocket": "https://aistudiocdn.com/rxjs@^7.8.2/webSocket?conditions=es2015",
+    "rxjs/testing": "https://aistudiocdn.com/rxjs@^7.8.2/testing?conditions=es2015",
+    "rxjs/fetch": "https://aistudiocdn.com/rxjs@^7.8.2/fetch?conditions=es2015",
+    "@angular/compiler": "https://next.esm.sh/@angular/compiler@^20.3.10?external=rxjs",
+    "@angular/platform-browser": "https://next.esm.sh/@angular/platform-browser@^20.3.10?external=rxjs",
+    "@google/genai": "https://next.esm.sh/@google/genai@^1.29.0?external=rxjs",
+    "@angular/common": "https://next.esm.sh/@angular/common@^20.3.10?external=rxjs",
+    "@angular/common/http": "https://next.esm.sh/@angular/common@^20.3.10/http?external=rxjs",
+    "@angular/forms": "https://next.esm.sh/@angular/forms@^20.3.10?external=rxjs",
+    "@angular/core": "https://next.esm.sh/@angular/core@^20.3.10?external=rxjs"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <app-root></app-root>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "AI Media Studio",
+  "description": "A modern, responsive dashboard to generate video, audio, and images using AI. Features include Text-to-Video, Text-to-Image, Audio Transcription, and a unified Download Center.",
+  "requestFramePermissions": []
+}
